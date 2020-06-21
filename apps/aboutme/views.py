@@ -10,7 +10,7 @@ from .models import Attribute
 from .models import Like
 
 def aboutme(request):
-    me = Me.objects.order_by('my_Name')[0]
+    me = Me.objects.order_by('my_Level')[0]
     equipment_list = Equipment.objects.order_by('equipment_Name')
     skill_list = Skillset.objects.order_by('skill_Title')
     work_list = WorkExp.objects.order_by('year_Started')
