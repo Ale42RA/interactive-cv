@@ -1,8 +1,7 @@
 @font-face {
-  font-family: ArcadeClassic;
-  src: url(ARCADECLASSIC.ttf);
+  font-family: 'ArcadeClassic';
+  src: url(../fonts/ARCADECLASSIC.ttf);
 }
-
 
 h1{
   font-size: 90px;
