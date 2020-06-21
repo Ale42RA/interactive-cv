@@ -29,7 +29,7 @@ SECRET_KEY = 'm1#6@jp#=sbdi)224d%%^s&yabq+fb^-72rnc6qi@b89@vw5!c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ale42ra01.pythonanywhere.com']
 
 
 # Application definition
@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     'apps.cv',
     'apps.aboutme',
     'apps.portfolio',
-    
+    'apps.contactme',
+
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+MEDIA_URL = '/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
