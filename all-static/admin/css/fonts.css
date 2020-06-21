@@ -18,3 +18,12 @@
     font-weight: 300;
     font-style: normal;
 }
+
+
+@font-face {
+    font-family: 'ArcadeClassic';
+    src: url('../fonts/ArcadeClassic.tiff');
+    font-weight: 300;
+    font-style: normal;
+}
+
