@@ -1,12 +1,12 @@
 /* CSS APPLIED TO ALL PAGES */
 @font-face {
-    font-family: ArcadeClassic;
+    font-family: 'ArcadeClassic';
     src: url(ARCADECLASSIC.ttf);
   }
   
   body {
   
-    font-family: ArcadeClassic;
+    font-family: 'ArcadeClassic';
     word-spacing: 5px;
     background-image: url("pattern1.png");
     background-color: #E0909D;
@@ -17,6 +17,7 @@
   /* TOP */
   }
   header {
+    font-family: 'ArcadeClassic';
     background-size: cover;
     background-position: center;
     height: 50vh;
@@ -24,6 +25,7 @@
   }
   
   nav{
+    font-family: 'ArcadeClassic';
     position: fixed;
     width: 100%;
     line-height: 20px;
@@ -32,11 +34,13 @@
   }
   /* MENU BAR STYLES*/
   .menu {
+    font-family: 'ArcadeClassic';
   overflow: auto;
   background-color: #BE95C4 ;
     
   }
   .menu a {
+    font-family: 'ArcadeClassic';
     float: none;
     color: white;
     text-shadow: 2px 2px 5px #E0909D;
@@ -49,16 +53,19 @@
     font-size: 40px;
   }
   .menu a:hover {
+    font-family: 'ArcadeClassic';
     opacity: .70;
     background-color: #83c5be;
     color: black;
   }
   .menu a.active {
+    font-family: 'ArcadeClassic';
     background-color: #17C3B2;
     
     color: white;
   }
   h3 {
+    font-family: 'ArcadeClassic';
     background-image: url("pattern2.png");
 
     position: absolute;
@@ -73,7 +80,7 @@
   }
 
   .contact, .contact a,.contact a:visited {
-    font-family: ArcadeClassic;
+    font-family: 'ArcadeClassic';
     letter-spacing: 0px;
     font-size: 20px;
     background-color: #17C3B2;
