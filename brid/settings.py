@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'apps.cv',
     'apps.aboutme',
     'apps.portfolio',
+    'apps.contactme',
+
     
 ]
 
