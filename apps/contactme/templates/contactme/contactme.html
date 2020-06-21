@@ -1,0 +1,45 @@
+
+{% load static %}
+
+<script src="{% static "contactme/Event.js" %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'standard/standard.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'contactme/style.css' %}">
+
+<div class="contact">
+  <ul> 
+    <ul> <a href="mailto:mailto:alejandra.riv.ada@gmail.com?subject=Job Application"> Email me</a></ul>
+  </ul>
+</div>
+
+<nav>
+<div class="menu">
+  <ul>
+    <a href="../">Home</a>
+    <a href="../AboutMe">About Me</a>
+    <a href="../Blog">Blog</a>
+    <a href="../CV">CV</a>
+    <a href="../Portfolio">Portfolio</a>
+    <a class="active" href="">Contact Me</a>
+  </ul>
+  </div>
+</nav>
+
+
+<h1>Contact Me Form</h1>
+
+<div class="container">
+  <form action="mailto:alejandra.riv.ada@gmail.com" enctype="text/plain" >
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Write something..">
+
+    <label for="body">Body</label>
+    <textarea id="body" name="body" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" onclick="myFunction()">
+  </form>
+</div>
+
+
+
+
