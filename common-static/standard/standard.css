@@ -1,8 +1,8 @@
 /* CSS APPLIED TO ALL PAGES */
 @font-face {
-    font-family: 'ArcadeClassic';
-    src: url(../fonts/ARCADECLASSIC.ttf); 
-  }
+  font-family: 'ArcadeClassic';
+  src: url(../fonts/ArcadeClassic.ttf.woff);
+}
   
   body {
   
