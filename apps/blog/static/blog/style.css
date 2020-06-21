@@ -64,7 +64,7 @@ a, a:visited
   margin-bottom:20px;
   background-image: url(pattern3.png);
   background-repeat: repeat;
-  height: 20vh;
+  height: 25vh;
   width:80vw;
   padding: 10px;
   padding-left: 20px;
@@ -74,9 +74,11 @@ a, a:visited
   font-family: 'ArcadeClassic';
   object-fit: cover;
   width: 30vw;
-  height: 20vh;
+  height: 25vh;
   padding-right: 20px;
 }
+
+
 
 .rowPost h4{
   font-family: 'ArcadeClassic';
