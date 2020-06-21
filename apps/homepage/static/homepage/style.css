@@ -1,10 +1,11 @@
 /* CSS APPLIED TO HOMEPAGE AND BLOG */
-@font-face {
+/* @font-face {
   font-family: 'ArcadeClassic';
   src: url(../fonts/ARCADECLASSIC.ttf);
-}
+} */
 
 h1{
+  font-family: 'ArcadeClassic';
   font-size: 90px;
   letter-spacing: 5px;
   text-align: center;

@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: 'ArcadeClassic';
   src: url(../fonts/ARCADECLASSIC.ttf);
-}
+} */
 
 
 .column-left{ float: left; width: 33.333%; padding-top: 8%;}
@@ -12,6 +12,7 @@
 .column-inner-right{ float: right; width: 30%;}
 
 .introTxt {
+  font-family: 'ArcadeClassic';
   font-size: 22px;
   color: white;
   text-shadow: 2px 2px 5px #E0909D;
@@ -29,6 +30,7 @@
 }
 
 .introSummary{
+  font-family: 'ArcadeClassic';
 
   font-size: 22px;
   color: white;
@@ -50,6 +52,7 @@
 }
 
 .introSummary ul{
+  font-family: 'ArcadeClassic';
 
   text-align: left;
   padding-left: 0px;
@@ -64,6 +67,7 @@
 }
 
 .attributes, footer{
+  font-family: 'ArcadeClassic';
   font-size: 22px;
   color: white;
   text-shadow: 2px 2px 5px #86CB92;
@@ -86,6 +90,7 @@
 }
 
 .work, .education, .skills {
+  font-family: 'ArcadeClassic';
   font-size: 22px;
   color: white;
   text-shadow: 2px 2px 5px #FFA552;
@@ -108,6 +113,7 @@
 }
 
 footer a:visited, footer a{
+  font-family: 'ArcadeClassic';
   font-size: 20px;
   color: white;
   text-decoration: none;
@@ -115,6 +121,7 @@ footer a:visited, footer a{
 }
 
 .tooltip {
+  font-family: 'ArcadeClassic';
   position: relative;
   display: inline-block;
   text-decoration: wavy;
@@ -122,6 +129,7 @@ footer a:visited, footer a{
 }
 
 .tooltip .tooltiptext {
+  font-family: 'ArcadeClassic';
   visibility: hidden;
   background-color: black;
   color: #fff;
@@ -133,9 +141,11 @@ footer a:visited, footer a{
   z-index: 1;
 }
 .tooltip:hover .tooltiptext {
+  font-family: 'ArcadeClassic';
   visibility: visible;
 }
 .tooltip:hover{
+  font-family: 'ArcadeClassic';
   color:black;
 }
 
