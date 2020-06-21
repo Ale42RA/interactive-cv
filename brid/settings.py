@@ -48,10 +48,7 @@ INSTALLED_APPS = [
     'apps.portfolio',
     'apps.contactme',
 
-<<<<<<< HEAD
-=======
-    
->>>>>>> 7581ced78f9dfec61709a7e7b70446ecfff9cbf5
+
 ]
 
 MIDDLEWARE = [
