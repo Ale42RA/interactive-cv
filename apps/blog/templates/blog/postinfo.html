@@ -1,0 +1,66 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static '/standard/standard.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+
+<div class="contact">
+  <ul> 
+    <ul> <a href="mailto:mar933@student.bham.ac.uk?subject=Job Application"> Email me</a></ul>
+    <ul> <a href=""> Phone me: NOT Currently AVAILABLE</a></ul>
+  </ul>
+</div>
+
+<nav>
+  <div class="menu">
+    <ul>
+      <a href="../">Home</a>
+      <a href="../../AboutMe">About Me</a>
+      <a class="active" href="../">Blog</a>
+      <a href="../../CV">CV</a>
+      <a href="../../Portfolio">Portfolio</a>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+
+<div class="row"> 
+  <div class="postTitle" id="top">{{ selec_post.post_Title }}</div>
+  <div class="card"> 
+      <div class="postSum">
+        Written by: {{ selec_post.post_Author }}  <br>  
+        {{ selec_post.published_Date }} <br>
+        {{ selec_post.post_Type }}
+      </div>
+
+      <div class="postBody">
+          
+        {% if selec_post.post_Body_Image1 %}
+        <img src="{{selec_post.post_Body_Image1.url}}" alt="Blog Picture" style="float: right;"> 
+        {% endif %}
+
+        {% if selec_post.post_Body_Image2 %}
+        <img src="{{selec_post.post_Body_Image2.url}}" alt="Blog Picture" style="float: left;"> 
+        {% endif %}
+
+        {% if selec_post.post_Body_Image3 %}
+        <img src="{{selec_post.post_Body_Image3.url}}" alt="Blog Picture" style="float: right;  "> 
+        {% endif %}
+
+        {% if selec_post.post_Body_Image4 %}
+        <img src="{{selec_post.post_Body_Image4.url}}" alt="Blog Picture" style="float: left;"> 
+        {% endif %}
+
+        {{ selec_post.post_Text|linebreaks }}
+
+      </div>
+      
+      <a href="#top" style="color: #17C3B2; padding-left: 50px;">Go Back to the top.</a>
+      
+  </div>
+</div>
+   
+  
+
+

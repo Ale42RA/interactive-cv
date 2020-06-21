@@ -1,0 +1,183 @@
+{% load static %}
+{% load my_filters %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'standard/standard.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'aboutme/style.css' %}">
+
+
+<div class="contact">
+  <ul> 
+    <ul> <a href="mailto:mar933@student.bham.ac.uk?subject=Job Application"> Email me</a></ul>
+    <ul> <a href=""> Phone me: NOT Currently AVAILABLE</a></ul>
+  </ul>
+</div>
+
+<nav>
+<div class="menu">
+  <ul>
+    <a href="../">Home</a>
+    <a class="active" href="">About Me</a>
+    <a href="../Blog">Blog</a>
+    <a href="../CV">CV</a>
+    <a href="../Portfolio">Portfolio</a>
+  </ul>
+  </div>
+</nav>
+
+
+
+<div class="column-left">
+   <!-- introSummary contains the initial text describing me -->
+   <div class="introSummary">
+    
+
+    <div class="column-inner-left">
+      <img src="{% static 'aboutme/MyFace2.png' %}" alt="Profile Pic" align="left">
+      {% if equipment_list %}
+      <b style="background-color: #FFA552; padding: 5px;">Items Equipped:</b>
+      <ul>
+        {% for equipment in equipment_list %}
+        <div class="tooltip"><ul>{{equipment.equipment_Name}}</ul> 
+          <span class="tooltiptext">
+            {{equipment.equipment_Description}} 
+          </span>
+        </div>
+        {% endfor %}
+    </ul>
+      {% else %}
+      <p>No Items Equiped.</p>
+      {% endif %}
+
+    </div>
+
+    <div class="column-inner-right">
+        {% if me %}
+        <b style="background-color: #FFA552; padding: 5px;">{{me.my_Name}}</b>
+
+      <p>Lvl:  {{me.my_Level}}</p>
+        {% else %}
+        <p>No Name.</p>
+        {% endif %}
+
+      
+        {% if like_list %}
+        <b style="background-color: #FFA552; padding: 5px;">Likes: </b>
+        <ul>
+          {% for like in like_list %}
+          <ul>{{like.like_Title}}</ul>  
+          {% endfor %}
+        </ul> 
+        {% else %}
+        <p>No Likes.</p>
+        {% endif %}
+    </div>
+
+  </div>
+
+<!-- introTxt contains the initial text describing me -->
+  <div class="introTxt">
+    {% if me %}
+  <p> {{me.my_Introduction}}</p>
+    {% else %}
+    <p>No Current Info About Me.</p>
+    {% endif %}
+
+  </div>
+
+
+ 
+  
+</div>
+
+
+
+<div class="column-center">
+
+  <div class="attributes">
+      {% if attribute_list %}
+      <b style="background-color: #86CB92; padding: 5px;">Attributes: </b>      
+      {% for attribute in attribute_list %}
+      <ul>{{attribute.attribute_Name}}</ul> 
+
+      {% load my_filters %}
+      <ul>
+        {% for i in attribute.attribute_Level|times %}
+          <img src="{% static 'aboutme/hrt.png' %}" alt="Profile Pic" align="left" height="33px"> 
+        {% endfor %}
+      </ul>
+      <br>
+      {% endfor %}
+      {% else %}
+      <p>No Attributes found.</p>
+      {% endif %}
+  </div>
+  
+</div>
+
+
+
+  <div class="column-right">
+    <b style="padding-left: 20px;font-size: 20px;"> Hover over text for more information.</b>
+    <div class="education">
+        {% if education_list %}
+      <b style="background-color: #E0909D; padding: 5px;">Education:</b>
+        {% for education in education_list %}
+        <ul>
+          <div class="tooltip"><ul>{{education.degree_Title}} at {{education.institute_Name}}</ul> 
+            <span class="tooltiptext">
+              {% if education.degree_completed%}
+              Graduated on: {{education.year_Gained}}
+              {% else %}
+              Not yet completed
+              {% endif %}  
+            </span>
+          </div>
+         </ul>
+        {% endfor %}
+        {% else %}
+        <p>Education.</p>
+        {% endif %}
+    </div>
+
+
+    <div class="skills">
+        {% if skill_list %}
+        <b style="background-color: #E0909D; padding: 5px;">Skills:</b>
+        {% for skill in skill_list %}
+        <ul>
+          <div class="tooltip"><ul>{{skill.skill_Title}}</ul> 
+            <span class="tooltiptext">
+              {{skill.skill_Level}} Level
+              <br>{{skill.skill_Description}}
+            </span>
+          </div>
+         </ul>
+        {% endfor %}
+        {% else %}
+        <p>No Skills.</p>
+        {% endif %}
+    </div>
+
+    <div class="work">
+        {% if work_list %}
+        <b style="background-color: #E0909D; padding: 5px;">Work:</b>
+        {% for workExp in work_list %}
+        <ul>{{workExp.work_Exp_Title}} at {{workExp.work_Exp_Company}}</ul>  
+        <ul>From: {{workExp.year_Started}} at {{workExp.year_Finished}}</ul>  
+        {% endfor %}
+        {% else %}
+        <p>No Work Experience... Yet.</p>
+        {% endif %}
+    </div>
+ 
+</div>
+
+<footer>
+  <p>
+    <a href="../CV">Go to CV to get the PDF Version.<br> Or click Me</a>
+  </p>
+</footer>
+
+
+  
+  

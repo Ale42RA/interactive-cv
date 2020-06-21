@@ -1,0 +1,58 @@
+
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'standard/standard.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'cv/style.css' %}">
+
+
+<div class="contact">
+  <ul> 
+    <ul> <a href="mailto:mar933@student.bham.ac.uk?subject=Job Application"> Email me</a></ul>
+    <ul> <a href=""> Phone me: NOT Currently AVAILABLE</a></ul>
+  </ul>
+</div>
+
+<nav>
+<div class="menu">
+  <ul>
+    <a href="../">Home</a>
+    <a href="/AboutMe">About Me</a>
+    <a href="/Blog">Blog</a>
+    <a class="active" href="">CV</a>
+    <a href="/Portfolio">Portfolio</a>
+  </ul>
+  </div>
+</nav>
+
+
+  
+<a href="{{cv.cv_File.url}}" download>
+  <img src="{% static 'cv/DwnldPdf.png' %}" alt="PDF Version" width="90%" style="
+    margin-top: 5%;
+    margin-left: 5%;
+    padding:15px;
+    background-color: #86CB92;
+    border:2px solid #FFFD98;
+    -moz-box-shadow: 10px 10px 50px black;
+    -webkit-box-shadow: 10px 10px 50px black;
+    box-shadow: 10% 10% 10% black;
+    ">
+</a>
+<embed src="{{cv.cv_File.url}}" width= "50%" height="70%" style="
+display: block;
+flex-direction: row;
+float:right;
+margin-right: 25%;
+margin-top: 5%;
+margin-bottom: 20px;
+
+border:2px solid #FFFD98;
+    -moz-box-shadow: 10px 10px 50px black;
+    -webkit-box-shadow: 10px 10px 50px black;
+    box-shadow: 10% 10% 10% black;
+" />
+ 
+
+
+
+

@@ -1,0 +1,52 @@
+<!-- HTML FOR HOMEPAGE -->
+<html>
+{% load static %}
+
+<script src="{% static "homepage/Event.js" %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'standard/standard.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+<body onkeypress="myFunction()"></body>
+
+<div class="contact">
+  <ul> 
+    <ul> <a href="mailto:mar933@student.bham.ac.uk?subject=Job Application"> Email me</a></ul>
+    <ul> <a href=""> Phone me: NOT Currently AVAILABLE</a></ul>
+  </ul>
+</div>
+
+<header> 
+<nav>
+<div class="menu">
+  <ul>
+    <a class="active" href="">Home</a>
+    <a href="/AboutMe">About Me</a>
+    <a href="/Blog">Blog</a>
+    <a href="/CV">CV</a>
+    <a href="/Portfolio">Portfolio</a>
+  </ul>
+  </div>
+</nav>
+</header>
+
+<style>
+  #myDIV {
+    display: none;
+  }
+  </style>
+<div id="myDIV" class="aboutMe">
+  <h4> </h4>
+  <img src="{% static "homepage/Loading.gif" %}" alt="Loading" height="90px" align="centre" style="border-radius: 10px 10px 10px 10px;"">
+</div>
+
+<h1 style="top: 10%;"> Welcome to:<br>My<br>interactive<br>Cv </h1> 
+<h3 id="AboutMe"> </h3> 
+
+<h2 style="transform: translateX(150px);">
+<img src="{% static "homepage/TypeAnim.gif" %}" alt="Name" height="45px" align="right" style="transform: translate(-350px, 25px);">
+My Name:</h2>
+<img src="{% static "homepage/press_any_key_to_continue.gif" %}" alt="pressKey2Continue" height="45px" align="centre" " >
+</html>
+
+
+
+

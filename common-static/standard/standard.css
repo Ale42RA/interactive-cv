@@ -1,0 +1,92 @@
+/* CSS APPLIED TO ALL PAGES */
+@font-face {
+    font-family: ArcadeClassic;
+    src: url(ARCADECLASSIC.ttf);
+  }
+  
+  body {
+  
+    font-family: ArcadeClassic;
+    word-spacing: 5px;
+    background-image: url("pattern1.png");
+    background-color: #E0909D;
+    background-repeat: repeat;
+    background-attachment: fixed; 
+    
+   
+  /* TOP */
+  }
+  header {
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+  
+  }
+  
+  nav{
+    position: fixed;
+    width: 100%;
+    line-height: 20px;
+    z-index: 1;
+    background-color: #617073  ;
+  }
+  /* MENU BAR STYLES*/
+  .menu {
+  overflow: auto;
+  background-color: #BE95C4 ;
+    
+  }
+  .menu a {
+    float: none;
+    color: white;
+    text-shadow: 2px 2px 5px #E0909D;
+    text-align: center;
+    font-family: ArcadeClassic;
+    
+    letter-spacing: 2px;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-size: 40px;
+  }
+  .menu a:hover {
+    opacity: .70;
+    background-color: #83c5be;
+    color: black;
+  }
+  .menu a.active {
+    background-color: #17C3B2;
+    
+    color: white;
+  }
+  h3 {
+    background-image: url("pattern2.png");
+
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    width: 50%;
+    padding-bottom: 50%;
+    padding-left: 20%;
+    padding-right: 20%;
+    z-index: -1;
+  
+  }
+
+  .contact, .contact a,.contact a:visited {
+    font-family: ArcadeClassic;
+    letter-spacing: 0px;
+    font-size: 20px;
+    background-color: #17C3B2;
+    color: white;
+    text-shadow: 2px 2px 5px #E0909D;
+    text-decoration: none;
+    line-height: normal;
+    padding: 0px;
+    margin: 0px;
+    
+    
+
+
+  }
+
+  
