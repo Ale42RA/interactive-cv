@@ -1,11 +1,8 @@
 @font-face {
-  font-family: ArcadeClassic;
-  src: url(ARCADECLASSIC.ttf);
+  font-family: 'ArcadeClassic';
+  src: url(../fonts/ARCADECLASSIC.ttf);
 }
-@font-face {
-  font-family: west_england;
-  src: url('west_england.ttf');
-}
+
 
 .column-left{ float: left; width: 33.333%; padding-top: 8%;}
 .column-right{ float: right; width: 33.333%;padding-top: 8%; }
