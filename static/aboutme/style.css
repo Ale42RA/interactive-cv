@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'ArcadeClassic';
+  src: url(../fonts/ArcadeClassic.ttf.woff);
+}
+
+
+.column-left{ float: left; width: 33.333%; padding-top: 8%;}
+.column-right{ float: right; width: 33.333%;padding-top: 8%; }
+.column-center{ display: inline-block; width: 33.333%;padding-top: 8%; }
+
+.column-inner-left{ float: left; width: 50%;}
+.column-inner-right{ float: right; width: 30%;}
+
+.introTxt {
+  font-family: 'ArcadeClassic';
+  font-size: 22px;
+  color: white;
+  text-shadow: 2px 2px 5px #E0909D;
+  background-color: #e0909dad;
+
+  border:5px solid #E0909D;
+  border-radius: 25px 5px 25px 5px;
+  -webkit-box-shadow: 10px 10px 50px #E0909D;
+
+  position: relative;
+  overflow: auto;
+  margin-left: 2%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.introSummary{
+  font-family: 'ArcadeClassic';
+
+  font-size: 22px;
+  color: white;
+  text-shadow: 2px 2px 5px #E0909D;
+  background-color: #e0909dad;
+
+
+  border:5px solid #E0909D;
+  border-radius: 25px 5px 25px 5px;
+  -webkit-box-shadow: 10px 10px 50px #E0909D;
+
+
+  position: relative;
+  overflow: auto;
+  margin-left: 4%;
+  margin-top: 0%;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.introSummary ul{
+  font-family: 'ArcadeClassic';
+
+  text-align: left;
+  padding-left: 0px;
+  list-style-type: disc;
+}
+
+.introSummary img{
+  border:2px solid #E0909D;
+  border-radius: 35px 35px 35px 35px;
+  -webkit-box-shadow: 5px 5px 10px #E0909D;
+  margin-left: 2px;
+}
+
+.attributes, footer{
+  font-family: 'ArcadeClassic';
+  font-size: 22px;
+  color: white;
+  text-shadow: 2px 2px 5px #86CB92;
+  background-color: #86cb9198;
+
+
+  background-repeat: repeat;
+
+  border:5px solid #86CB92;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 10px 10px 50px #86CB92;
+
+  position: relative;
+  overflow: auto;
+  top:2%;
+  margin-left: 2%;
+  padding: 10px;
+  margin-bottom: 20px;
+
+}
+
+.work, .education, .skills {
+  font-family: 'ArcadeClassic';
+  font-size: 22px;
+  color: white;
+  text-shadow: 2px 2px 5px #FFA552;
+  background-color: #ffa65275;
+
+
+  background-repeat: repeat;
+
+  border:5px solid #FFA552;
+  border-radius: 5px 25px 5px 25px;
+  -webkit-box-shadow: 10px 10px 50px #FFA552;
+
+  position: relative;
+  overflow: auto;
+  margin-left: 4%;
+  margin-top: 0%;
+  padding: 5px;
+  margin-bottom: 30px;
+
+}
+
+footer a:visited, footer a{
+  font-family: 'ArcadeClassic';
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px #86CB92;
+}
+
+.tooltip {
+  font-family: 'ArcadeClassic';
+  position: relative;
+  display: inline-block;
+  text-decoration: wavy;
+  font-style: italic;
+}
+
+.tooltip .tooltiptext {
+  font-family: 'ArcadeClassic';
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding:5px;
+ 
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  font-family: 'ArcadeClassic';
+  visibility: visible;
+}
+.tooltip:hover{
+  font-family: 'ArcadeClassic';
+  color:black;
+}
+
+
+
+  

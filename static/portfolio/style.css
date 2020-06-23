@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'ArcadeClassic';
+  src: url(../fonts/ArcadeClassic.ttf.woff);
+}
+
+
+h1{
+  font-size: 90px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px #E0909D;
+
+  background-color: #86CB92; 
+  border:2px solid #FFFD98;
+  -moz-box-shadow: 10px 10px 50px black;
+  -webkit-box-shadow: 10px 10px 50px black;
+  box-shadow: 10% 10% 10% black;
+ 
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  width: 60%;
+  z-index: 0;
+}
+
+h2 {
+  font-family: ArcadeClassic;
+  font-size: 70px;
+  top: -50%;
+  margin-left: 10%;
+  position: relative;
+  color: white;
+
+/* padding-top: 10%; */
+}
+
+
+p {
+  text-align: justify;
+  top: -0%;
+  margin-left: 10%;
+  padding-top: 10%;
+  position: relative;
+  color: white;
+
+}
+li {
+  font-family: 'Arial';
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  top: -50%;
+  margin-left: 10%;
+  padding-top: 10%;
+  position: relative;
+  color: white;
+}
+a {
+  font-family: 'Arial';
+  color: greenyellow;
+}
+img {
+  top: -33.5%;
+  margin-left: 25%;
+  padding-top: 10%;
+  position: relative;
+  z-index: 3;
+ 
+}
+
+
+
+
+ 
+  a, a:visited
+  {
+color: white;
+text-decoration: none;
+  }
+  
+  /* MENU BAR STYLES*/
+  .table {
+    
+    font-family: ArcadeClassic;
+    overflow: hidden;
+    top: 15%;
+   transform: translateX(-290px);    
+   position: absolute;
+    text-align: center;
+  }
+  .table a {
+    font-family: ArcadeClassic;
+
+    float: left;
+    color: white;
+    text-align: center;
+    /* padding: 14px 30px; */
+    padding: 14px 300px;
+    text-decoration: dotted;
+    font-size: 30px;
+    position: relative;
+  }
+ 
+  .table a:hover {
+    text-align: center;
+    opacity: .70;
+    background-color: #83c5be;
+    color: black;
+  }
+  .table a.active {
+    text-align: center;
+    background-color: #4F9E95;
+    color: white;
+    font-weight: bold;
+  }
+
+
+
+  
