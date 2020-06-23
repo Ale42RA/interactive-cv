@@ -14,12 +14,11 @@ h1{
 
   background-color: #86CB92; 
   border:2px solid #FFFD98;
-  -moz-box-shadow: 10px 10px 50px black;
   -webkit-box-shadow: 10px 10px 50px black;
-  box-shadow: 10% 10% 10% black;
  
-  position: absolute;
-  top: 5%;
+  position: relative;
+  margin-top: 10%;
+  margin-bottom: 0px;
   left: 20%;
   width: 60%;
   z-index: 0;
@@ -28,20 +27,23 @@ h1{
 h2 {
   font-family: 'ArcadeClassic';
   font-size: 70px;
-  top: 0%;
+  margin: 0px;
   margin-left: 10%;
   position: relative;
   color: white;
 
 }
 
-img {
-  top: 0%;
-  margin-left: 10%;
-  position: relative;
-  color: white;
-  z-index: 3;
- 
+
+.card{
+  padding: 20px;
+  margin-top: 20px;
+}
+.card img{
+  padding: 0px;
+  margin: 0px;
+  padding-right: 20%;
+  vertical-align: bottom;
 }
 .aboutMe img{
   background-color: #86CB92; 
@@ -51,8 +53,8 @@ img {
   box-shadow: 10% 10% 50% black;
  
   position: fixed;
+  left: 30.33%;
   top: 40%;
-  left: 20%;
   font-size: 70px;
   z-index: 5;
 }

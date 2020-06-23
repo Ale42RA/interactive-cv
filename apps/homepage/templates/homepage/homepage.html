@@ -13,7 +13,7 @@
   </ul>
 </div>
 
-<header> 
+
 <nav>
 <div class="menu">
   <ul>
@@ -26,27 +26,34 @@
   </ul>
   </div>
 </nav>
-</header>
+
 
 <style>
   #myDIV {
     display: none;
   }
   </style>
+
+
+
 <div id="myDIV" class="aboutMe">
-  <h4> </h4>
   <img src="{% static "homepage/Loading.gif" %}" alt="Loading" height="90px" align="centre" style="border-radius: 10px 10px 10px 10px;"">
 </div>
 
-
-<h1 style="top: 10%;"> Welcome to:<br>My<br>interactive<br>Cv </h1> 
+<h1> Welcome to:<br>My<br>interactive<br>Cv </h1> 
 <h3 id="AboutMe"> </h3> 
 
-<h2 style="top: 15%;">
-<img src="{% static "homepage/TypeAnim.gif" %}" alt="Name" height="45px" align="right">
-My Name:
-<img src="{% static "homepage/press_any_key_to_continue.gif" %}" alt="pressKey2Continue" height="45px" align="centre" >
+
+<div class="card">
+  <h2>
+    My Name:
+  <img src="{% static "homepage/TypeAnim.gif" %}" alt="Name" height="45px" align="right" style="padding-top: 2%;">
+  
+  <img src="{% static "homepage/press_any_key_to_continue.gif" %}" alt="pressKey2Continue" height="45px" align="centre" >
 </h2>
+
+</div>
+
 </html>
 
 
