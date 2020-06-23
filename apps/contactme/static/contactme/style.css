@@ -4,6 +4,7 @@
 }
 
 h1{
+  font-family: 'ArcadeClassic';
   font-size: 90px;
   letter-spacing: 5px;
   text-align: center;
@@ -26,6 +27,7 @@ h1{
 * {box-sizing: border-box;}
 
 input[type=text], input[type=email], select, textarea {
+  font-family: 'ArcadeClassic';
   font-size: 20px;
 
   width: 100%;
@@ -41,6 +43,7 @@ input[type=text], input[type=email], select, textarea {
 }
 
 input[type=submit] {
+  font-family: 'ArcadeClassic';
   font-size: 15px;
   font-family: 'ArcadeClassic';
   background-color: #86CB92;
@@ -53,10 +56,12 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
+  font-family: 'ArcadeClassic';
   background-color: #45a049;
 }
 
 .container {
+  font-family: 'ArcadeClassic';
   font-size: 20px;
   text-shadow: 2px 2px 5px #E0909D;
   color: black;
